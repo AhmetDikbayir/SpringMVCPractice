@@ -19,8 +19,8 @@
 					<form:hidden path="id" />
 					<tr>
 						<td class="courseprop">CourseName:</td>
-						<td><form:input path="courseName" size="30" /></td>
-						<td><form:errors path="courseName" class="error" /></td>
+						<td><form:input path="coursename" size="30" /></td>
+						<td><form:errors path="coursename" class="error" /></td>
 					</tr>
 
 					<tr>

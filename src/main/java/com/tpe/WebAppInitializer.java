@@ -3,18 +3,28 @@ package com.tpe;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+    //Database and Hibernate Configuration
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[0];
+        return new Class[]{
+                RootContextConfig.class
+        };
     }
 
+    //Spring MVC configuration
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[0];
+        return new Class[]{
+                WebMvcConfig.class
+        };
     }
 
+    //URL and Servlet Connection
     @Override
     protected String[] getServletMappings() {
-        return new String[0];
+        return new String[]{
+                "/"
+        };
     }
 }
